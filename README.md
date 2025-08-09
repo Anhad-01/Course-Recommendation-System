@@ -2,7 +2,7 @@
 
 A sophisticated AI-powered course recommendation system that uses semantic search and FAISS indexing to provide personalized course suggestions based on user queries.
 
-## 🌟 Features
+## Features
 
 - **Semantic Search**: Uses sentence transformers to understand the meaning of user queries
 - **Fast Similarity Search**: Leverages FAISS (Facebook AI Similarity Search) for efficient vector operations
@@ -12,7 +12,7 @@ A sophisticated AI-powered course recommendation system that uses semantic searc
 - **Similarity Scoring**: Each recommendation comes with a confidence score
 - **Export Functionality**: Download your recommendations as CSV files
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 futureskills_course_recommendation/
@@ -26,7 +26,7 @@ futureskills_course_recommendation/
 └── processed_courses.csv         # Processed course data (created on first run)
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -54,7 +54,7 @@ futureskills_course_recommendation/
    - The application will automatically open at `http://localhost:8501`
    - If it doesn't open automatically, navigate to the URL manually
 
-## 💻 Usage
+## Usage
 
 ### Web Interface (Recommended)
 
@@ -94,7 +94,7 @@ for course, score in recommendations:
     print(f"{course['Title']} - Similarity: {score:.4f}")
 ```
 
-## 🔧 Technical Details
+## Technical Details
 
 ### Core Components
 
@@ -139,7 +139,7 @@ The system uses cosine similarity, where:
 - **0.4-0.59**: Moderate similarity
 - **< 0.4**: Low similarity
 
-## 📊 Dataset
+## Dataset
 
 The system works with the `FutureSkills Prime_data.csv` dataset containing:
 - **Title**: Course name
@@ -148,7 +148,7 @@ The system works with the `FutureSkills Prime_data.csv` dataset containing:
 - **Duration**: Course length
 - **Price**: Course cost (cleaned and normalized)
 
-## 🎯 Example Queries
+## Example Queries
 
 Try these example queries to explore the system:
 
@@ -160,7 +160,7 @@ Try these example queries to explore the system:
 - `"business courses cheap"`
 - `"certification courses duration 100 hours"`
 
-## ⚙️ Configuration
+## Configuration
 
 ### Customizing Search Parameters
 
@@ -176,7 +176,7 @@ You can modify the search behavior by adjusting parameters in the code:
 - **IndexHNSW**: For approximate but faster search
 - **GPU Support**: Use `faiss-gpu` for GPU acceleration with large datasets
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -191,7 +191,7 @@ You can modify the search behavior by adjusting parameters in the code:
 - **Storage**: At least 1GB free space for models and indexes
 - **CPU**: Multi-core processor recommended for faster embedding generation
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - **Advanced Filtering**: Add price range, duration, and domain filters
 - **User Profiles**: Implement user preference learning
