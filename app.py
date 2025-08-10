@@ -79,14 +79,14 @@ def display_course_card(course, score, index):
             <h4 style="color: #1f77b4; margin-bottom: 0.5rem;">
                 {index}. {course['Title']}
             </h4>
-            <p style="margin-bottom: 0.3rem;">
-                <strong>Offered by:</strong> {course['Offered_by']}
+            <p style="margin-bottom: 0.3rem; color: black;">
+                <strong style="color: black;">Offered by:</strong> {course['Offered_by']}
             </p>
-            <p style="margin-bottom: 0.3rem;">
-                <strong>Domain:</strong> {course['Domain']}
+            <p style="margin-bottom: 0.3rem; color: black;">
+                <strong style="color: black;">Domain:</strong> {course['Domain']}
             </p>
-            <p style="margin-bottom: 0.3rem;">
-                <strong>Duration:</strong> {course['Duration']}
+            <p style="margin-bottom: 0.3rem; color: black;">
+                <strong style="color: black;">Duration:</strong> {course['Duration']}
             </p>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
                 <span class="price-tag">₹{course['Price']:,}</span>
